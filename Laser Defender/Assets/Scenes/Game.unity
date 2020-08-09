@@ -466,6 +466,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5057737086200013864, guid: f4fc1e647879e43f29ab55ce0d854ebc,
+        type: 3}
+      propertyPath: waypoints.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5057737086200013864, guid: f4fc1e647879e43f29ab55ce0d854ebc,
+        type: 3}
+      propertyPath: waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 1535924208}
+    - target: {fileID: 5057737086200013864, guid: f4fc1e647879e43f29ab55ce0d854ebc,
+        type: 3}
+      propertyPath: waypoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 2147365013}
+    - target: {fileID: 5057737086200013864, guid: f4fc1e647879e43f29ab55ce0d854ebc,
+        type: 3}
+      propertyPath: waypoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 1086588646}
+    - target: {fileID: 5057737086200013864, guid: f4fc1e647879e43f29ab55ce0d854ebc,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5363720153706555745, guid: f4fc1e647879e43f29ab55ce0d854ebc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -528,28 +553,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4fc1e647879e43f29ab55ce0d854ebc, type: 3}
---- !u!1 &1231224242 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5363720153706555775, guid: f4fc1e647879e43f29ab55ce0d854ebc,
-    type: 3}
-  m_PrefabInstance: {fileID: 1122271188}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1231224243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231224242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a46a89d1d140488b97d64c62b1d1915, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 1535924208}
-  - {fileID: 2147365013}
-  - {fileID: 1086588646}
 --- !u!1001 &1371955670
 PrefabInstance:
   m_ObjectHideFlags: 0
