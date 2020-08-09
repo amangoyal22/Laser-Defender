@@ -121,75 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &116864354
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1906523022841761934, guid: a5a26489f3038450e8702537a112b36f,
-        type: 3}
-      propertyPath: m_Name
-      value: Player Laser
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359561269628302901, guid: a5a26489f3038450e8702537a112b36f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359561269628302901, guid: a5a26489f3038450e8702537a112b36f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359561269628302901, guid: a5a26489f3038450e8702537a112b36f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359561269628302901, guid: a5a26489f3038450e8702537a112b36f,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359561269628302901, guid: a5a26489f3038450e8702537a112b36f,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359561269628302901, guid: a5a26489f3038450e8702537a112b36f,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359561269628302901, guid: a5a26489f3038450e8702537a112b36f,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359561269628302901, guid: a5a26489f3038450e8702537a112b36f,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359561269628302901, guid: a5a26489f3038450e8702537a112b36f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359561269628302901, guid: a5a26489f3038450e8702537a112b36f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359561269628302901, guid: a5a26489f3038450e8702537a112b36f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a5a26489f3038450e8702537a112b36f, type: 3}
 --- !u!1001 &195869293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -527,6 +458,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5704561116500169105, guid: 1368afdcdcd924d2795ae13517262505,
+        type: 3}
+      propertyPath: laserPrefab
+      value: 
+      objectReference: {fileID: 1906523022841761934, guid: a5a26489f3038450e8702537a112b36f,
+        type: 3}
+    - target: {fileID: 5704561116500169105, guid: 1368afdcdcd924d2795ae13517262505,
+        type: 3}
+      propertyPath: projectileSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5704561116500169105, guid: 1368afdcdcd924d2795ae13517262505,
+        type: 3}
+      propertyPath: projectileFirePeriod
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 5704561116500169106, guid: 1368afdcdcd924d2795ae13517262505,
         type: 3}
