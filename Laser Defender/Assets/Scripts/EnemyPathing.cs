@@ -12,7 +12,6 @@ public class EnemyPathing : MonoBehaviour
     {
         waypoints = waveConfig.GetWaypoints();
         transform.position = waypoints[waypointIndex].transform.position;
-        waypointIndex++;
     }
 
     // Update is called once per frame
@@ -32,7 +31,8 @@ public class EnemyPathing : MonoBehaviour
         {
             var targetPosition = waypoints[waypointIndex].transform.position;
             var movementThisFrame = waveConfig.GetMoveSpeed() * Time.deltaTime;
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition, movementThisFrame);
+            transform.position = Vector3.MoveTowards
+                (transform.position, targetPosition, movementThisFrame);
             if (transform.position == targetPosition)
             {
                 waypointIndex++;
