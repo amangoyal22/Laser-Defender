@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float projectileSpeed = 0.2f;
     [SerializeField] private GameObject deathVfx;
     [SerializeField] private float durationOfExplosion = 1f;
+    [SerializeField] private AudioClip deathSound;
 
     private void Start()
     {
@@ -56,6 +57,7 @@ public class Enemy : MonoBehaviour
                 Destroy(gameObject);
                 GameObject explosion = Instantiate(deathVfx, transform.position, transform.rotation);
                 Destroy(explosion, durationOfExplosion);
+                AudioSource.PlayClipAtPoint(deathSound,transform.position);
             }
         }
     }
