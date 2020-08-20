@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {   
@@ -95,6 +96,7 @@ public class Player : MonoBehaviour
             damageDealer.Hit();
             if (this.health <= 0f)
             {
+                FindObjectOfType<Level>().LoadEndGame();
                 Destroy(gameObject);
                 AudioSource.PlayClipAtPoint(deathSound,Camera.main.transform.position, deathSoundVolume);
             }   
