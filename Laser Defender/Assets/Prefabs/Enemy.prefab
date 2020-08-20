@@ -115,6 +115,9 @@ MonoBehaviour:
   laserPrefab: {fileID: 5119066751899714910, guid: af4417764b01544ccb9c548ac7cdf9a0,
     type: 3}
   projectileSpeed: 5
+  deathVfx: {fileID: 3925963113445880635, guid: bd64c309f414c4e1ea12b4fcc24fcb84,
+    type: 3}
+  durationOfExplosion: 0.2
 --- !u!58 &-2314047551630045216
 CircleCollider2D:
   m_ObjectHideFlags: 0
