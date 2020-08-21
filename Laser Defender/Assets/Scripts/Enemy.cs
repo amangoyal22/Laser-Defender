@@ -5,13 +5,18 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class Enemy : MonoBehaviour
-{
+{   [Header("Stats")]
     [SerializeField] private float health = 100;
+    [SerializeField] private int scoreValue = 150;
+    
+    [Header("Shooting")]
     [SerializeField] private float shortCounter;
     [SerializeField] private float minTimeBetweenShots = 0.2f;
     [SerializeField] private float maxTimeBetweenShots = 0.3f;
     [SerializeField] private GameObject laserPrefab;
     [SerializeField] private float projectileSpeed = 0.2f;
+    
+    [Header("Sound Effects")]
     [SerializeField] private GameObject deathVfx;
     [SerializeField] private float durationOfExplosion = 1f;
     [SerializeField] private AudioClip deathSound;
@@ -62,6 +67,7 @@ public class Enemy : MonoBehaviour
                 GameObject explosion = Instantiate(deathVfx, transform.position, transform.rotation);
                 Destroy(explosion, durationOfExplosion);
                 AudioSource.PlayClipAtPoint(deathSound,Camera.main.transform.position, deathSoundVolume);
+                FindObjectOfType<GameSession>().AddScore(scoreValue);
             }
         }
     }
