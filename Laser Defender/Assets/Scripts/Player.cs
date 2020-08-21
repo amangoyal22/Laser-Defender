@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] float xPadding = 0.1f;
     [SerializeField] float yPadding = 0.1f;
-    [SerializeField] float health = 200f;
+    [SerializeField] int health = 200;
     [SerializeField] private AudioClip deathSound;
     [SerializeField] [Range(0,1)]private float deathSoundVolume = 0.7f;
     
@@ -101,5 +101,10 @@ public class Player : MonoBehaviour
                 AudioSource.PlayClipAtPoint(deathSound,Camera.main.transform.position, deathSoundVolume);
             }   
         }
+    }
+
+    public int GetHealth()
+    {
+        return health;
     }
 }
